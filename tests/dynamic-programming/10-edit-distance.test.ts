@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { minDistance } from '../../src/challenges/dynamic-programming/10-edit-distance'; describe('DP 10',()=>{it('minimizes edit operations',()=>expect(minDistance('horse','ros')).toBe(3)); it('handles empty string',()=>expect(minDistance('','abc')).toBe(3));});

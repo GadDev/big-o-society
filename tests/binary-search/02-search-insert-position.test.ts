@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { searchInsert } from '../../src/challenges/binary-search/02-search-insert-position';describe('02 — Search Insert',()=>{it.each([[[1,3,5,6],5,2],[[1,3,5,6],2,1],[[1,3,5,6],7,4],[[1,3,5,6],0,0]])('%j',(a,t,e)=>expect(searchInsert(a as number[],t as number)).toBe(e));});

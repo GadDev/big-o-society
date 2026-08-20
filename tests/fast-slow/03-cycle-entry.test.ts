@@ -1,0 +1,3 @@
+import { ListNode } from '../../src/challenges/fast-slow/list-node';
+function list(values:number[]):ListNode|null{const dummy=new ListNode(0);let cur=dummy;for(const v of values){cur.next=new ListNode(v);cur=cur.next;}return dummy.next;}
+import { describe, expect, it } from 'vitest';import { detectCycle } from '../../src/challenges/fast-slow/03-cycle-entry';describe('03 — Cycle Entry',()=>{it('returns exact entry',()=>{const h=list([3,2,0,-4])!;const entry=h.next!;let tail=h;while(tail.next)tail=tail.next;tail.next=entry;expect(detectCycle(h)).toBe(entry);});it('returns null',()=>expect(detectCycle(list([1,2]))).toBeNull());});

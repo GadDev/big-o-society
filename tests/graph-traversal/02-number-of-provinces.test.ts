@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { findCircleNum } from '../../src/challenges/graph-traversal/02-number-of-provinces'; describe('Graph 02',()=>{it('counts matrix components',()=>expect(findCircleNum([[1,1,0],[1,1,0],[0,0,1]])).toBe(2)); it('handles all isolated',()=>expect(findCircleNum([[1,0,0],[0,1,0],[0,0,1]])).toBe(3));});

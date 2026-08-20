@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { isHappy } from '../../src/challenges/fast-slow/04-happy-number';describe('04 — Happy Number',()=>{it.each([[19,true],[2,false],[1,true],[7,true]])('%d',(n,e)=>expect(isHappy(n)).toBe(e));});

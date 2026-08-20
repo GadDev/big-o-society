@@ -1,0 +1,2 @@
+import { describe, expect, it } from 'vitest'; import { combine } from '../../src/challenges/backtracking/03-combinations';
+const norm=(x:number[][])=>x.map(a=>a.join(',')).sort(); describe('Backtracking 03 - combine',()=>{it('chooses without order duplicates',()=>expect(norm(combine(4,2))).toEqual(norm([[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]))); it('handles k=n',()=>expect(combine(3,3)).toEqual([[1,2,3]]));});

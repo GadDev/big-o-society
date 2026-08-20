@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { numDecodings } from '../../src/challenges/dynamic-programming/09-decode-ways'; describe('DP 09',()=>{it('counts valid one/two digit endings',()=>{expect(numDecodings('12')).toBe(2); expect(numDecodings('226')).toBe(3);}); it('handles invalid leading zero',()=>expect(numDecodings('06')).toBe(0));});

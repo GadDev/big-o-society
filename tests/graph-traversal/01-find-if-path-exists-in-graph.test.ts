@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { validPath } from '../../src/challenges/graph-traversal/01-find-if-path-exists-in-graph'; describe('Graph 01',()=>{it('finds connected path',()=>expect(validPath(3,[[0,1],[1,2],[2,0]],0,2)).toBe(true)); it('detects separate components',()=>expect(validPath(6,[[0,1],[0,2],[3,5],[5,4],[4,3]],0,5)).toBe(false));});

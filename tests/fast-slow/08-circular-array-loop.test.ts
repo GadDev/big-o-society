@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { circularArrayLoop } from '../../src/challenges/fast-slow/08-circular-array-loop';describe('08 — Circular Array Loop',()=>{it.each([[[2,-1,1,2,2],true],[[-1,-2,-3,-4,-5,6],false],[[1,-1,5,1,4],true],[[-2,1,-1,-2,-2],false]])('%j',(a,e)=>expect(circularArrayLoop(a as number[])).toBe(e));});

@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { networkDelayTime } from '../../src/challenges/graph-traversal/09-network-delay-time'; describe('Graph 09',()=>{it('finds maximum shortest-path distance',()=>expect(networkDelayTime([[2,1,1],[2,3,1],[3,4,1]],4,2)).toBe(2)); it('returns -1 for unreachable nodes',()=>expect(networkDelayTime([[1,2,1]],2,2)).toBe(-1));});

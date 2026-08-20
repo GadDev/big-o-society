@@ -1,0 +1,2 @@
+import { TreeNode } from '../../src/challenges/dfs/structures';
+import { describe, expect, it } from 'vitest';import { isSameTree } from '../../src/challenges/dfs/03-same-tree';describe('03 — Same Tree',()=>{it('matches equal trees',()=>expect(isSameTree(new TreeNode(1,new TreeNode(2),new TreeNode(3)),new TreeNode(1,new TreeNode(2),new TreeNode(3)))).toBe(true));it('rejects structure mismatch',()=>expect(isSameTree(new TreeNode(1,new TreeNode(2)),new TreeNode(1,null,new TreeNode(2)))).toBe(false));it('accepts two nulls',()=>expect(isSameTree(null,null)).toBe(true));});

@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { canPartition } from '../../src/challenges/dynamic-programming/08-partition-equal-subset-sum'; describe('DP 08',()=>{it('finds target half sum',()=>expect(canPartition([1,5,11,5])).toBe(true)); it('rejects impossible split',()=>expect(canPartition([1,2,3,5])).toBe(false));});

@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { shipWithinDays } from '../../src/challenges/binary-search/09-ship-within-days';describe('09 — Ship Within Days',()=>{it.each([[[1,2,3,4,5,6,7,8,9,10],5,15],[[3,2,2,4,1,4],3,6],[[1,2,3,1,1],4,3]])('%j',(a,d,e)=>expect(shipWithinDays(a as number[],d as number)).toBe(e));});

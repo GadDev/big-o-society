@@ -1,0 +1,2 @@
+import { describe, expect, it } from 'vitest'; import { combinationSum } from '../../src/challenges/backtracking/04-combination-sum';
+const norm=(x:number[][])=>x.map(a=>[...a].sort((a,b)=>a-b).join(',')).sort(); describe('Backtracking 04 - combinationSum',()=>{it('allows candidate reuse',()=>expect(norm(combinationSum([2,3,6,7],7))).toEqual(norm([[2,2,3],[7]]))); it('handles impossible target',()=>expect(combinationSum([2],1)).toEqual([]));});

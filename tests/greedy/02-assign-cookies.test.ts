@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { findContentChildren } from '../../src/challenges/greedy/02-assign-cookies'; describe('Greedy 02',()=>{it('maximizes matched children',()=>expect(findContentChildren([1,2,3],[1,1])).toBe(1)); it('uses smallest sufficient cookies',()=>expect(findContentChildren([1,2],[1,2,3])).toBe(2));});

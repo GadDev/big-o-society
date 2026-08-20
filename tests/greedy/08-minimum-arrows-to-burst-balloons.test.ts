@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { findMinArrowShots } from '../../src/challenges/greedy/08-minimum-arrows-to-burst-balloons'; describe('Greedy 08',()=>{it('stabs overlap groups',()=>expect(findMinArrowShots([[10,16],[2,8],[1,6],[7,12]])).toBe(2)); it('handles disjoint balloons',()=>expect(findMinArrowShots([[1,2],[3,4],[5,6]])).toBe(3));});

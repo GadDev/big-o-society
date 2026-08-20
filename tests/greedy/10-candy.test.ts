@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { candy } from '../../src/challenges/greedy/10-candy'; describe('Greedy 10',()=>{it('satisfies both neighbor directions',()=>expect(candy([1,0,2])).toBe(5)); it('handles plateau',()=>expect(candy([1,2,2])).toBe(4));});

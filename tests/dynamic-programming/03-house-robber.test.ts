@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { rob } from '../../src/challenges/dynamic-programming/03-house-robber'; describe('DP 03',()=>{it('chooses take or skip',()=>expect(rob([1,2,3,1])).toBe(4)); it('handles competing houses',()=>expect(rob([2,7,9,3,1])).toBe(12));});

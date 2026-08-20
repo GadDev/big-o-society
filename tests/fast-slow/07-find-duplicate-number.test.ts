@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { findDuplicate } from '../../src/challenges/fast-slow/07-find-duplicate-number';describe('07 — Find Duplicate',()=>{it.each([[[1,3,4,2,2],2],[[3,1,3,4,2],3],[[3,3,3,3,3],3]])('%j',(a,e)=>{const copy=[...(a as number[])];expect(findDuplicate(a as number[])).toBe(e);expect(a).toEqual(copy);});});

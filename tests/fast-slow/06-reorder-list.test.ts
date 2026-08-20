@@ -1,0 +1,3 @@
+import { ListNode } from '../../src/challenges/fast-slow/list-node';
+function list(values:number[]):ListNode|null{const dummy=new ListNode(0);let cur=dummy;for(const v of values){cur.next=new ListNode(v);cur=cur.next;}return dummy.next;}
+import { describe, expect, it } from 'vitest';import { reorderList } from '../../src/challenges/fast-slow/06-reorder-list';function vals(h:ListNode|null){const a:number[]=[];for(let c=h;c;c=c.next)a.push(c.val);return a;}describe('06 — Reorder List',()=>{it.each([[[1,2,3,4],[1,4,2,3]],[[1,2,3,4,5],[1,5,2,4,3]],[[1],[1]]])('%j',(a,e)=>{const h=list(a as number[]);reorderList(h);expect(vals(h)).toEqual(e);});});

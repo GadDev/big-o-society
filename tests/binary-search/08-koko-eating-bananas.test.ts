@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { minEatingSpeed } from '../../src/challenges/binary-search/08-koko-eating-bananas';describe('08 — Koko',()=>{it.each([[[3,6,7,11],8,4],[[30,11,23,4,20],5,30],[[30,11,23,4,20],6,23],[[312884470],312884469,2]])('%j',(a,h,e)=>expect(minEatingSpeed(a as number[],h as number)).toBe(e));});

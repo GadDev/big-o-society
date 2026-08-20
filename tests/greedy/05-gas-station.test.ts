@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { canCompleteCircuit } from '../../src/challenges/greedy/05-gas-station'; describe('Greedy 05',()=>{it('finds a valid reset point',()=>expect(canCompleteCircuit([1,2,3,4,5],[3,4,5,1,2])).toBe(3)); it('returns -1 when total fuel is insufficient',()=>expect(canCompleteCircuit([2,3,4],[3,4,3])).toBe(-1));});

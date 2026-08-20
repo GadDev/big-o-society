@@ -1,0 +1,2 @@
+import { describe, expect, it } from 'vitest'; import { exist } from '../../src/challenges/backtracking/07-word-search';
+describe('Backtracking 07 - exist',()=>{const b=[['A','B','C','E'],['S','F','C','S'],['A','D','E','E']]; it('finds paths and restores state',()=>{expect(exist(b.map(r=>[...r]),'ABCCED')).toBe(true); expect(exist(b.map(r=>[...r]),'SEE')).toBe(true);}); it('forbids reusing one cell',()=>expect(exist(b.map(r=>[...r]),'ABCB')).toBe(false));});

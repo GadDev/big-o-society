@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { eraseOverlapIntervals } from '../../src/challenges/greedy/06-non-overlapping-intervals'; describe('Greedy 06',()=>{it('keeps earliest finishing intervals',()=>expect(eraseOverlapIntervals([[1,2],[2,3],[3,4],[1,3]])).toBe(1)); it('handles identical intervals',()=>expect(eraseOverlapIntervals([[1,2],[1,2],[1,2]])).toBe(2));});

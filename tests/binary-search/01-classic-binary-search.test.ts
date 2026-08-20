@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { binarySearch } from '../../src/challenges/binary-search/01-classic-binary-search';describe('01 — Classic Binary Search',()=>{it.each([[[ -1,0,3,5,9,12],9,4],[[-1,0,3,5,9,12],2,-1],[[5],5,0],[[],1,-1]])('%j',(a,t,e)=>expect(binarySearch(a as number[],t as number)).toBe(e));});
