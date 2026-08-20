@@ -1,0 +1,2 @@
+import { describe, expect, it } from 'vitest'; import { subsets } from '../../src/challenges/backtracking/01-subsets';
+const norm=(x:number[][])=>x.map(a=>a.join(',')).sort(); describe('Backtracking 01 - subsets',()=>{it('returns all subsets',()=>expect(norm(subsets([1,2,3]))).toEqual(norm([[],[1],[2],[3],[1,2],[1,3],[2,3],[1,2,3]]))); it('handles empty input',()=>expect(subsets([])).toEqual([[]]));});

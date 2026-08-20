@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { jump } from '../../src/challenges/greedy/04-jump-game-ii'; describe('Greedy 04',()=>{it('minimizes jumps',()=>expect(jump([2,3,1,1,4])).toBe(2)); it('handles a direct jump',()=>expect(jump([2,1,1])).toBe(1));});

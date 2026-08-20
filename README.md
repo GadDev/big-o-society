@@ -64,3 +64,11 @@ npm run practice -- two-pointers 1
 Before touching the keyboard, say:
 
 > “Two ends are being compared, so I should consider two pointers.”
+
+## Project links
+
+- **[Big O Society docs](docs/)** — the published pattern-refresher site (`npm run docs:dev` locally; published to GitHub Pages via `.github/workflows/deploy-docs.yml`).
+- **[CURRICULUM.md](CURRICULUM.md)** — the full 10-exercise track per pattern.
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** — how to add/change an exercise, run tests, and record a changeset (`npx changeset`) before merging; see **[RELEASING.md](RELEASING.md)** for how that flows into a release.
+- **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)**
+- **[LICENSE](LICENSE)** — MIT

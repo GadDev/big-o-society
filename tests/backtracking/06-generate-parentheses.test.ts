@@ -1,0 +1,2 @@
+import { describe, expect, it } from 'vitest'; import { generateParenthesis } from '../../src/challenges/backtracking/06-generate-parentheses';
+describe('Backtracking 06 - generateParenthesis',()=>{it('generates only valid strings',()=>expect(generateParenthesis(3).sort()).toEqual(['((()))','(()())','(())()','()(())','()()()'].sort())); it('handles one pair',()=>expect(generateParenthesis(1)).toEqual(['()']));});

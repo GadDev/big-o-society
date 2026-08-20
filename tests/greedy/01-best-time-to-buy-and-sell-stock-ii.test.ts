@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { maxProfitMany } from '../../src/challenges/greedy/01-best-time-to-buy-and-sell-stock-ii'; describe('Greedy 01',()=>{it('collects every rise',()=>expect(maxProfitMany([7,1,5,3,6,4])).toBe(7)); it('handles falling prices',()=>expect(maxProfitMany([7,6,4,3,1])).toBe(0));});

@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { calcEquation } from '../../src/challenges/graph-traversal/08-evaluate-division'; describe('Graph 08',()=>{it('multiplies weights along paths',()=>expect(calcEquation([['a','b'],['b','c']],[2,3],[['a','c'],['b','a'],['a','e'],['a','a'],['x','x']])).toEqual([6,0.5,-1,1,-1]));});

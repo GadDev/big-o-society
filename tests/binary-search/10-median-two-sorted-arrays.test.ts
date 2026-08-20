@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { findMedianSortedArrays } from '../../src/challenges/binary-search/10-median-two-sorted-arrays';describe('10 — Median Two Sorted Arrays',()=>{it.each([[[1,3],[2],2],[[1,2],[3,4],2.5],[[],[1],1],[[0,0],[0,0],0]])('%j',(a,b,e)=>expect(findMedianSortedArrays(a as number[],b as number[])).toBe(e));});

@@ -1,0 +1,42 @@
+{
+	"name": "dsa-pattern-master",
+	"private": true,
+	"version": "1.0.0",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"test": "vitest",
+		"test:run": "vitest run",
+		"test:watch": "vitest --watch",
+		"practice": "node scripts/practice.mjs",
+		"docs:dev": "vitepress dev docs",
+		"docs:build": "vitepress build docs",
+		"docs:preview": "vitepress preview docs",
+		"changeset": "changeset",
+		"version": "changeset version",
+		"test:two-pointers": "vitest run tests/two-pointers",
+		"test:hash-map": "vitest run tests/hash-map",
+		"test:sliding-window": "vitest run tests/sliding-window",
+		"test:prefix-sum": "vitest run tests/prefix-sum",
+		"test:stack": "vitest run tests/stack",
+		"test:queue": "vitest run tests/queue",
+		"test:binary-search": "vitest run tests/binary-search",
+		"test:fast-slow": "vitest run tests/fast-slow",
+		"test:dfs": "vitest run tests/dfs",
+		"test:bfs": "vitest run tests/bfs",
+		"test:backtracking": "vitest run tests/backtracking",
+		"test:greedy": "vitest run tests/greedy",
+		"test:dynamic-programming": "vitest run tests/dynamic-programming",
+		"test:graph-traversal": "vitest run tests/graph-traversal"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.9",
+		"@changesets/cli": "^3.0.1",
+		"@types/node": "^24.0.0",
+		"typescript": "^5.9.0",
+		"vite": "^7.1.0",
+		"vitepress": "^1.6.4",
+		"vitest": "^3.2.0"
+	}
+}

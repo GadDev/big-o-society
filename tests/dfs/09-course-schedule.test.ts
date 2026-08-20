@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { canFinish } from '../../src/challenges/dfs/09-course-schedule';describe('09 — Course Schedule',()=>{it.each([[2,[[1,0]],true],[2,[[1,0],[0,1]],false],[4,[[1,0],[2,1],[3,2]],true],[1,[],true]])('%j',(n,p,e)=>expect(canFinish(n as number,p as number[][])).toBe(e));});

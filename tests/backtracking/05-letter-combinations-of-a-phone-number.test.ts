@@ -1,0 +1,2 @@
+import { describe, expect, it } from 'vitest'; import { letterCombinations } from '../../src/challenges/backtracking/05-letter-combinations-of-a-phone-number';
+describe('Backtracking 05 - letterCombinations',()=>{it('expands every keypad choice',()=>{const r=letterCombinations('23'); expect(r).toHaveLength(9); expect(r).toContain('ad'); expect(r).toContain('cf');}); it('handles empty input',()=>expect(letterCombinations('')).toEqual([]));});

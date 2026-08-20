@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { minCostClimbingStairs } from '../../src/challenges/dynamic-programming/02-min-cost-climbing-stairs'; describe('DP 02',()=>{it('chooses cheapest predecessor',()=>expect(minCostClimbingStairs([10,15,20])).toBe(15)); it('handles longer input',()=>expect(minCostClimbingStairs([1,100,1,1,1,100,1,1,100,1])).toBe(6));});

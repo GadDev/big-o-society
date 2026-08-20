@@ -1,0 +1,23 @@
+/**
+ * Exercise 04 — Happy Number
+ * Difficulty: Easy | Mastery: L2→L3
+ * Skill: Cycle detection on generated states
+ *
+ * Recognition trigger: repeated transformation eventually reaches 1 or loops
+ *
+ * Before coding, say aloud:
+ *   1. Why does this problem suggest Fast & Slow Pointers?
+ *   2. What invariant/state will stay true while I scan or recurse?
+ *
+ * Critical explanation question:
+ *   What is the “linked list” even though there are no ListNode objects?
+ *
+ * Complexity target:
+ *   Time: O(log n) per transform sequence
+ *   Space: O(1)
+ */
+
+export function isHappy(n: number): boolean {
+  // TODO: Repeatedly replace n with the sum of squared digits; return whether it reaches 1.
+  throw new Error('Not implemented');
+}

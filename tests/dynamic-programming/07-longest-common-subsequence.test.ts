@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { longestCommonSubsequence } from '../../src/challenges/dynamic-programming/07-longest-common-subsequence'; describe('DP 07',()=>{it('compares string prefixes',()=>expect(longestCommonSubsequence('abcde','ace')).toBe(3)); it('handles no common chars',()=>expect(longestCommonSubsequence('abc','def')).toBe(0));});

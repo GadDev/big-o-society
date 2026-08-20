@@ -1,0 +1,2 @@
+import { TreeNode } from '../../src/challenges/dfs/structures';
+import { describe, expect, it } from 'vitest';import { maxDepth } from '../../src/challenges/dfs/01-max-depth-binary-tree';describe('01 — Max Depth',()=>{it('handles tree',()=>{const r=new TreeNode(3,new TreeNode(9),new TreeNode(20,new TreeNode(15),new TreeNode(7)));expect(maxDepth(r)).toBe(3);});it('handles empty',()=>expect(maxDepth(null)).toBe(0));it('handles chain',()=>expect(maxDepth(new TreeNode(1,null,new TreeNode(2)))).toBe(2));});

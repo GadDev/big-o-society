@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { lengthOfLIS } from '../../src/challenges/dynamic-programming/05-longest-increasing-subsequence'; describe('DP 05',()=>{it('computes best subsequence ending at each index',()=>expect(lengthOfLIS([10,9,2,5,3,7,101,18])).toBe(4)); it('handles equal values',()=>expect(lengthOfLIS([7,7,7,7])).toBe(1));});

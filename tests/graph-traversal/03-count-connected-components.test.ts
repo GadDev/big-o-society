@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { countComponents } from '../../src/challenges/graph-traversal/03-count-connected-components'; describe('Graph 03',()=>{it('counts undirected components',()=>expect(countComponents(5,[[0,1],[1,2],[3,4]])).toBe(2)); it('handles no edges',()=>expect(countComponents(4,[])).toBe(4));});

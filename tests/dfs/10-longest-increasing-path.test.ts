@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { longestIncreasingPath } from '../../src/challenges/dfs/10-longest-increasing-path';describe('10 — Longest Increasing Path',()=>{it.each([[[[9,9,4],[6,6,8],[2,1,1]],4],[[[3,4,5],[3,2,6],[2,2,1]],4],[[[1]],1],[[],0]])('%j',(m,e)=>expect(longestIncreasingPath(m as number[][])).toBe(e));});

@@ -1,0 +1,2 @@
+import { TreeNode } from '../../src/challenges/dfs/structures';
+import { describe, expect, it } from 'vitest';import { hasPathSum } from '../../src/challenges/dfs/04-path-sum';describe('04 — Path Sum',()=>{it('finds root-to-leaf sum',()=>{const r=new TreeNode(5,new TreeNode(4,new TreeNode(11,new TreeNode(7),new TreeNode(2))),new TreeNode(8,new TreeNode(13),new TreeNode(4,null,new TreeNode(1))));expect(hasPathSum(r,22)).toBe(true);expect(hasPathSum(r,26)).toBe(true);expect(hasPathSum(r,5)).toBe(false);});expect(hasPathSum(null,0)).toBe(false);});

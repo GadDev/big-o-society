@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { uniquePaths } from '../../src/challenges/dynamic-programming/06-unique-paths'; describe('DP 06',()=>{it('combines top and left paths',()=>expect(uniquePaths(3,7)).toBe(28)); it('handles one row',()=>expect(uniquePaths(1,5)).toBe(1));});

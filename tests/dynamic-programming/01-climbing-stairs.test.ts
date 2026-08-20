@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { climbStairs } from '../../src/challenges/dynamic-programming/01-climbing-stairs'; describe('DP 01',()=>{it('builds from previous two states',()=>{expect(climbStairs(2)).toBe(2); expect(climbStairs(5)).toBe(8);});});

@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { floodFill } from '../../src/challenges/dfs/05-flood-fill';describe('05 — Flood Fill',()=>{it('fills component',()=>expect(floodFill([[1,1,1],[1,1,0],[1,0,1]],1,1,2)).toEqual([[2,2,2],[2,2,0],[2,0,1]]));it('handles same color',()=>expect(floodFill([[0,0,0],[0,0,0]],0,0,0)).toEqual([[0,0,0],[0,0,0]]));});

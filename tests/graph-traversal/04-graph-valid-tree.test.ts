@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { validTree } from '../../src/challenges/graph-traversal/04-graph-valid-tree'; describe('Graph 04',()=>{it('accepts connected acyclic graph',()=>expect(validTree(5,[[0,1],[0,2],[0,3],[1,4]])).toBe(true)); it('rejects a cycle',()=>expect(validTree(5,[[0,1],[1,2],[2,3],[1,3],[1,4]])).toBe(false));});

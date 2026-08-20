@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { searchRange } from '../../src/challenges/binary-search/03-first-last-position';describe('03 — First and Last Position',()=>{it.each([[[5,7,7,8,8,10],8,[3,4]],[[5,7,7,8,8,10],6,[-1,-1]],[[],0,[-1,-1]],[[2,2],2,[0,1]]])('%j',(a,t,e)=>expect(searchRange(a as number[],t as number)).toEqual(e));});

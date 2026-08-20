@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { coinChange } from '../../src/challenges/dynamic-programming/04-coin-change'; describe('DP 04',()=>{it('finds minimum reusable coins',()=>expect(coinChange([1,2,5],11)).toBe(3)); it('detects impossible and zero amount',()=>{expect(coinChange([2],3)).toBe(-1); expect(coinChange([2],0)).toBe(0);});});

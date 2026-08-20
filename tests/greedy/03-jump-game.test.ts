@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { canJump } from '../../src/challenges/greedy/03-jump-game'; describe('Greedy 03',()=>{it('detects reachable end',()=>expect(canJump([2,3,1,1,4])).toBe(true)); it('detects a dead frontier',()=>expect(canJump([3,2,1,0,4])).toBe(false));});

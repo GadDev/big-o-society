@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest'; import { partitionLabels } from '../../src/challenges/greedy/07-partition-labels'; describe('Greedy 07',()=>{it('closes only when all seen chars end',()=>expect(partitionLabels('ababcbacadefegdehijhklij')).toEqual([9,7,8])); it('handles one partition',()=>expect(partitionLabels('eccbbbbdec')).toEqual([10]));});

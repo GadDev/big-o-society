@@ -1,0 +1,1 @@
+import { describe, expect, it } from 'vitest';import { mySqrt } from '../../src/challenges/binary-search/05-integer-square-root';describe('05 — Integer Square Root',()=>{it.each([[0,0],[1,1],[4,2],[8,2],[2147395599,46339]])('%d',(x,e)=>expect(mySqrt(x)).toBe(e));});

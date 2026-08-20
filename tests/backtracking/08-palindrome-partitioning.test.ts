@@ -1,0 +1,2 @@
+import { describe, expect, it } from 'vitest'; import { partitionPalindromes } from '../../src/challenges/backtracking/08-palindrome-partitioning';
+const norm=(x:string[][])=>x.map(a=>a.join('|')).sort(); describe('Backtracking 08 - partitionPalindromes',()=>{it('returns every valid partition',()=>expect(norm(partitionPalindromes('aab'))).toEqual(norm([['a','a','b'],['aa','b']]))); it('handles one char',()=>expect(partitionPalindromes('z')).toEqual([['z']]));});
