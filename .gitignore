@@ -1,0 +1,21 @@
+node_modules/
+
+# build output
+dist/
+dist-ssr/
+
+# logs
+npm-debug.log*
+*.log
+
+# editor/OS
+.DS_Store
+*.local
+
+# vitest/vite cache
+.vite/
+coverage/
+
+# vitepress
+docs/.vitepress/cache/
+docs/.vitepress/dist/
