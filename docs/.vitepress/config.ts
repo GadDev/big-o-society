@@ -18,6 +18,7 @@ export default defineConfig({
 			{ text: "Case Files", link: "/patterns/" },
 			{ text: "Curriculum", link: "/curriculum" },
 		],
+
 		sidebar: {
 			"/patterns/": [
 				{
@@ -55,6 +56,8 @@ export default defineConfig({
 		search: {
 			provider: "local",
 		},
-		socialLinks: [],
+		socialLinks: [
+			{ icon: "github", link: "https://github.com/GadDev/big-o-society" },
+		],
 	},
 });
