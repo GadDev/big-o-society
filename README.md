@@ -2,6 +2,13 @@
 
 A small TypeScript + Vite + Vitest dojo for **daily DSA pattern recognition**.
 
+[![CI](https://github.com/GadDev/big-o-society/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/GadDev/big-o-society/actions/workflows/deploy-docs.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vitest](https://img.shields.io/badge/tested_with-Vitest-6E9F18?logo=vitest&logoColor=white)](https://vitest.dev/)
+[![Contributor Covenant](https://img.shields.io/badge/Code%20of%20Conduct-Contributor%20Covenant-blue.svg)](./CODE_OF_CONDUCT.md)
+[![Docs](https://img.shields.io/badge/docs-live-brightgreen)](https://gaddev.github.io/big-o-society/)
+
 ## Start
 
 ```bash
