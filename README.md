@@ -68,6 +68,12 @@ Open `src/challenges/two-pointers/01-valid-palindrome.ts`. Make `tests/two-point
 npm run practice -- two-pointers 1
 ```
 
+To just run that one exercise's test (filters by filename substring):
+
+```bash
+npm run test:exercise -- 01-valid-palindrome
+```
+
 Before touching the keyboard, say:
 
 > “Two ends are being compared, so I should consider two pointers.”

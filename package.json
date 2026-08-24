@@ -28,7 +28,8 @@
 		"test:backtracking": "vitest run tests/backtracking",
 		"test:greedy": "vitest run tests/greedy",
 		"test:dynamic-programming": "vitest run tests/dynamic-programming",
-		"test:graph-traversal": "vitest run tests/graph-traversal"
+		"test:graph-traversal": "vitest run tests/graph-traversal",
+		"test:exercise": "vitest run"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.9",
