@@ -17,6 +17,10 @@ export default defineConfig({
 		nav: [
 			{ text: "Case Files", link: "/patterns/" },
 			{ text: "Curriculum", link: "/curriculum" },
+			{
+				text: "Training Board",
+				link: "/training/progress",
+			},
 		],
 
 		sidebar: {
@@ -41,6 +45,68 @@ export default defineConfig({
 							link: "/patterns/dynamic-programming",
 						},
 						{ text: "14 · Graph Traversal", link: "/patterns/graph-traversal" },
+					],
+				},
+			],
+			"/patterns/two-pointers/": [
+				{
+					text: "CASE 01 · TWO POINTERS",
+
+					items: [
+						{
+							text: "Case File",
+							link: "/patterns/two-pointers/",
+						},
+
+						{
+							text: "01 · The Mirror Job",
+							link: "/patterns/two-pointers/jobs/valid-palindrome",
+						},
+
+						{
+							text: "02 · The Pairing",
+							link: "/patterns/two-pointers/jobs/pair-sum-sorted",
+						},
+
+						{
+							text: "03 · The Cleanup",
+							link: "/patterns/two-pointers/jobs/remove-duplicates",
+						},
+
+						{
+							text: "04 · The Zero Sweep",
+							link: "/patterns/two-pointers/jobs/move-zeroes",
+						},
+
+						{
+							text: "05 · The Square Deal",
+							link: "/patterns/two-pointers/jobs/sorted-squares",
+						},
+
+						{
+							text: "06 · The Container Deal",
+							link: "/patterns/two-pointers/jobs/container-most-water",
+						},
+
+						{
+							text: "07 · The Three-Man Crew",
+							link: "/patterns/two-pointers/jobs/three-sum",
+						},
+
+						{
+							text: "08 · The Backroom Merge",
+							link: "/patterns/two-pointers/jobs/merge-sorted-arrays",
+						},
+
+						{
+							text: "09 · The Reservoir",
+							link: "/patterns/two-pointers/jobs/trapping-rain-water",
+						},
+
+						{
+							text: "10 · The Four-Way Contract",
+							link: "/patterns/two-pointers/jobs/four-sum",
+						},
 					],
 				},
 			],
