@@ -11,7 +11,9 @@ const patterns = readdirSync(testsRoot, { withFileTypes: true })
 const toTitle = (pattern) =>
 	pattern.replace(/(^|-)([a-z])/g, (_, sep, letter) => `${sep === "-" ? " " : ""}${letter.toUpperCase()}`);
 
-const [rawPattern, rawDay] = process.argv.slice(2);
+const rawArgs = process.argv.slice(2);
+const watch = rawArgs.includes("--watch");
+const [rawPattern, rawDay] = rawArgs.filter((arg) => arg !== "--watch");
 
 if (!rawPattern) {
 	console.log("\n⚔️ DSA patterns\n");
@@ -54,7 +56,8 @@ console.log(
 );
 
 const npm = process.platform === "win32" ? "npm.cmd" : "npm";
-const result = spawnSync(npm, ["exec", "vitest", "--", "run", file], {
+const vitestArgs = watch ? [file] : ["run", file];
+const result = spawnSync(npm, ["exec", "vitest", "--", ...vitestArgs], {
 	stdio: "inherit",
 	shell: false,
 });
