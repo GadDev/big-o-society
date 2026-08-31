@@ -6,6 +6,12 @@
  * Problem:
  *   Digits map 1→A ... 26→Z. Return number of valid decodings.
  *
+ * Goal: given a digit string `s` where 1→A ... 26→Z, return how many
+ * distinct ways it can be decoded into letters.
+ * Example: "12" -> 2 ("AB" or "L");
+ *          "226" -> 3 ("BZ", "VF", "BBF");
+ *          "06" -> 0 (leading zero is never a valid encoding).
+ *
  * Recognition trigger: count ways to decode prefix using valid one-digit and two-digit endings
  *
  * Before coding, say aloud:

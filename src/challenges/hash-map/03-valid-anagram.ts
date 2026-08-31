@@ -3,6 +3,12 @@
  * Difficulty: Easy | Mastery: L2 Implement
  * Variant: Frequency counting
  *
+ * Goal: given two strings `a` and `b`, return true if `b` is an anagram of
+ * `a` (same characters, same counts, any order).
+ * Example: "anagram" / "nagaram" -> true (same letters, same counts);
+ *          "rat" / "car" -> false (different letters);
+ *          "" / "" -> true (both empty, trivially equal).
+ *
  * Recognition trigger: same items + same counts -> frequency map
  *
  * Before coding, say aloud:

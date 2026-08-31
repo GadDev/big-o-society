@@ -6,6 +6,12 @@
  * Problem:
  *   You can climb 1 or 2 steps. Return the number of distinct ways to reach step n.
  *
+ * Goal: given `n` stairs, return how many distinct ways there are to climb to
+ * the top taking 1 or 2 steps at a time.
+ * Example: n=2 -> 2 (1+1, 2);
+ *          n=5 -> 8 (Fibonacci-like growth);
+ *          n=3 -> 3 (1+1+1, 1+2, 2+1).
+ *
  * Recognition trigger: ways to reach step i come from the last possible moves
  *
  * Before coding, say aloud:

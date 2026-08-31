@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L4→L5
  * Variant: 2D prefix sum
  *
+ * Goal: given a 2D `matrix`, build a structure that answers inclusive
+ * rectangle-sum queries `sumRegion(row1, col1, row2, col2)` in O(1).
+ * Example: new NumMatrix([[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]);
+ *          sumRegion(2, 1, 4, 3) -> 8;
+ *          sumRegion(1, 1, 2, 2) -> 11.
+ *
  * Recognition trigger: rectangle sum -> inclusion/exclusion of four prefixes
  *
  * Before coding, say aloud:

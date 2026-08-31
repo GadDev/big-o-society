@@ -2,6 +2,12 @@
  * Exercise 09 — Trapping Rain Water
  * Difficulty: Hard | Mastery: Level 4 → 5
  *
+ * Goal: given bar `heights`, return how many units of rain water are
+ * trapped between the bars after rain.
+ * Example: [0,1,0,2,1,0,1,3,2,1,2,1] -> 6;
+ *          [4, 2, 0, 3, 2, 5] -> 9;
+ *          [1, 2, 3, 4] -> 0 (strictly increasing, nothing is trapped).
+ *
  * Given bar heights, return how many units of rain water are trapped after rain.
  *
  * Example:

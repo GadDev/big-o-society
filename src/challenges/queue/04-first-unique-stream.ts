@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L2→L3
  * Skill: Queue + frequency map
  *
+ * Goal: given characters arriving one by one in `chars`, after each arrival
+ * return the first character seen so far that has appeared exactly once, or null.
+ * Example: ["a","a","b","c"] -> ["a", null, "b", "b"];
+ *          ["a","b","a","b","c"] -> ["a", "a", "b", null, "c"];
+ *          [] -> [].
+ *
  * Recognition trigger: preserve arrival order while counts change
  *
  * Before coding, say aloud:

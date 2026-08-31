@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L3→L4
  * Variant: Fixed window + frequency
  *
+ * Goal: given `pattern` and `text`, return true if `text` contains a
+ * contiguous substring that is a permutation (anagram) of `pattern`.
+ * Example: pattern="ab", text="eidbaooo" -> true (substring "ba" at index 3);
+ *          pattern="ab", text="eidboaoo" -> false (no permutation of "ab" occurs);
+ *          pattern="adc", text="dcda" -> true (substring "dca" at index 1).
+ *
  * Recognition trigger: permutation of pattern -> equal frequency profile
  *
  * Before coding, say aloud:

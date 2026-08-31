@@ -6,6 +6,11 @@
  * Problem:
  *   Return every subset of distinct nums. Order does not matter.
  *
+ * Goal: given an array `nums` of distinct integers, return every possible
+ * subset (the power set), in any order.
+ * Example: [1,2,3] -> [[],[1],[2],[3],[1,2],[1,3],[2,3],[1,2,3]] (all 8 subsets);
+ *          [] -> [[]] (the empty array has exactly one subset: the empty one).
+ *
  * Recognition trigger: all subsets -> at each element choose take or skip
  *
  * Before coding, say aloud:

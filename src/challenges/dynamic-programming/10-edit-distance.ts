@@ -6,6 +6,12 @@
  * Problem:
  *   Return minimum insertions, deletions, and replacements to transform word1 into word2.
  *
+ * Goal: given `word1` and `word2`, return the minimum number of insert,
+ * delete, or replace operations needed to transform word1 into word2.
+ * Example: "horse", "ros" -> 3 (horse -> rorse [replace h->r] -> rose
+ *          [delete r] -> ros [delete e]: 1 replace + 2 deletes);
+ *          "", "abc" -> 3 (insert 'a', 'b', 'c').
+ *
  * Recognition trigger: state compares prefixes; replace/delete/insert map to three neighboring states
  *
  * Before coding, say aloud:

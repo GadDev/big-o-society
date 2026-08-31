@@ -3,6 +3,11 @@
  * Difficulty: Easy | Mastery: L1→L2
  * Skill: Floyd cycle detection
  *
+ * Goal: given the head of a linked list, return whether it contains a cycle
+ * (some node's `next` points back to an earlier node), using O(1) space.
+ * Example: 3 -> 2 -> 0 -> -4 -> (back to node 2) -> true;
+ *          1 -> 2 -> 3 -> null -> false.
+ *
  * Recognition trigger: cycle + O(1) memory -> fast eventually catches slow
  *
  * Before coding, say aloud:

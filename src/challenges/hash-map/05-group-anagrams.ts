@@ -3,6 +3,13 @@
  * Difficulty: Medium | Mastery: L3 Explain
  * Variant: Canonical key grouping
  *
+ * Goal: given an array of strings `words`, group the words that are
+ * anagrams of each other into sublists (order of groups/words doesn't matter).
+ * Example: ["eat","tea","tan","ate","nat","bat"] ->
+ *          [["eat","tea","ate"], ["tan","nat"], ["bat"]];
+ *          [] -> [] (no words, no groups);
+ *          ["", ""] -> [["", ""]] (two empty strings are anagrams of each other).
+ *
  * Recognition trigger: same signature -> same bucket
  *
  * Before coding, say aloud:

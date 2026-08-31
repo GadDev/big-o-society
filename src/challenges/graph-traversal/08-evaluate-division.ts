@@ -6,6 +6,15 @@
  * Problem:
  *   For each a/b query, return the implied ratio from equations, or -1 if unknown.
  *
+ * Goal: given `equations` of variable pairs with known division `values`
+ * (equations[i][0] / equations[i][1] = values[i]), answer each query
+ * `a / b`, returning -1.0 if the ratio can't be derived.
+ * Example: equations=[["a","b"],["b","c"]], values=[2,3],
+ *          queries=[["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]] ->
+ *          [6, 0.5, -1, 1, -1] (a/c = (a/b)*(b/c) = 6, b/a = 1/2 = 0.5,
+ *          "e" is never mentioned in an equation so a/e is unknown, a/a = 1,
+ *          and "x" never appears at all so x/x is also unknown).
+ *
  * Recognition trigger: equations are weighted edges; query answer is product along a path
  *
  * Before coding, say aloud:

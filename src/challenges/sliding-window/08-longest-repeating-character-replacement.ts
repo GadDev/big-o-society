@@ -3,6 +3,13 @@
  * Difficulty: Medium | Mastery: L4 Adapt
  * Variant: Variable window + dominant frequency
  *
+ * Goal: given a string `s` and an integer `k`, return the length of the
+ * longest substring that can be turned into a single repeated character
+ * by replacing at most `k` of its characters.
+ * Example: "ABAB", k=2 -> 4 (replace both 'B's, or both 'A's, to get "AAAA"/"BBBB");
+ *          "AABABBA", k=1 -> 4 (e.g. "ABBA" -> "BBBB" with one replacement);
+ *          "AAAA", k=0 -> 4 (already all the same character).
+ *
  * Recognition trigger: window size - most frequent <= replacements
  *
  * Before coding, say aloud:

@@ -3,6 +3,12 @@
  * Difficulty: Easy | Mastery: L1→L2
  * Skill: Stack as editable history
  *
+ * Goal: given a string `s`, repeatedly remove pairs of adjacent equal
+ * characters until no such pair remains, then return the result.
+ * Example: "abbaca" -> "ca" (remove "bb", then "aa" exposed next to it);
+ *          "azxxzy" -> "ay" (remove "xx", then "zz" is exposed);
+ *          "aaaa" -> "" (all four characters cancel out in pairs).
+ *
  * Recognition trigger: undo the latest character when a matching neighbor arrives
  *
  * Before coding, say aloud:

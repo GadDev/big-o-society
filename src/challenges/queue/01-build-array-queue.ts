@@ -3,6 +3,12 @@
  * Difficulty: Easy | Mastery: L1 Recognize
  * Skill: Queue fundamentals
  *
+ * Goal: implement a generic FIFO queue with enqueue, dequeue, peek, size,
+ * and isEmpty, without paying O(n) per dequeue.
+ * Example: enqueue(10), enqueue(20), enqueue(30) -> peek() = 10, size() = 3;
+ *          dequeue() -> 10, dequeue() -> 20, size() = 1;
+ *          dequeue() -> 30, dequeue() -> undefined, isEmpty() = true.
+ *
  * Recognition trigger: first in must be first out
  *
  * Before coding, say aloud:

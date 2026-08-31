@@ -3,6 +3,13 @@
  * Difficulty: Medium | Mastery: L3 Explain
  * Skill: Queue simulation reasoning
  *
+ * Goal: given `tickets[i]` tickets needed by person i standing in a circular
+ * queue (each buys 1 ticket per turn then moves to the back unless done),
+ * return the number of seconds until person `k` has bought all their tickets.
+ * Example: tickets = [2,3,2], k = 2 -> 6;
+ *          tickets = [5,1,1,1], k = 0 -> 8;
+ *          tickets = [1], k = 0 -> 1.
+ *
  * Recognition trigger: round-robin service in arrival order
  *
  * Before coding, say aloud:

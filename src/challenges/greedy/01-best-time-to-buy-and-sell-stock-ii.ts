@@ -6,6 +6,11 @@
  * Problem:
  *   Return maximum profit when you may buy/sell multiple times but hold at most one share.
  *
+ * Goal: given daily stock `prices`, sum every positive day-to-day gain to get
+ * the maximum achievable profit with unlimited buy/sell transactions.
+ * Example: [7,1,5,3,6,4] -> 7 (buy at 1 sell at 5 = 4, buy at 3 sell at 6 = 3);
+ *          [7,6,4,3,1] -> 0 (prices only fall, no profitable move exists).
+ *
  * Recognition trigger: unlimited transactions -> collect every positive adjacent gain
  *
  * Before coding, say aloud:

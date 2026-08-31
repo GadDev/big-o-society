@@ -3,6 +3,13 @@
  * Difficulty: Easy | Mastery: L1 Recognize
  * Variant: Fixed window
  *
+ * Goal: given an array `nums` and window size `k`, return the maximum sum
+ * among all contiguous subarrays of exactly `k` elements. If `k` is larger
+ * than the array, return null.
+ * Example: [2, 1, 5, 1, 3, 2], k=3 -> 9 (window [5, 1, 3]);
+ *          [-4, -2, -7], k=2 -> -6 (window [-4, -2]);
+ *          [1, 2], k=3 -> null (no window of that size exists).
+ *
  * Recognition trigger: contiguous + exact size k -> fixed window
  *
  * Before coding, say aloud:

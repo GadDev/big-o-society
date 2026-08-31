@@ -6,6 +6,12 @@
  * Problem:
  *   A robot moves only right/down from top-left to bottom-right. Return number of unique paths.
  *
+ * Goal: given a grid of size `m` rows by `n` columns, return how many
+ * distinct paths a robot can take from the top-left to the bottom-right
+ * corner, moving only right or down.
+ * Example: m=3, n=7 -> 28;
+ *          m=1, n=5 -> 1 (only one row, so only one possible path).
+ *
  * Recognition trigger: ways to a cell come from top + left
  *
  * Before coding, say aloud:

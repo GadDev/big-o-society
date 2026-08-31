@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L3→L4
  * Variant: Frequency map + ranking
  *
+ * Goal: given an array `nums` and an integer `k`, return the `k` values that
+ * occur most frequently, in any order.
+ * Example: [1, 1, 1, 2, 2, 3], k=2 -> [1, 2] (1 occurs 3x, 2 occurs 2x);
+ *          [1], k=1 -> [1] (only value present);
+ *          [-1, -1, 2, 2, 2, 3], k=2 -> [-1, 2] (2 occurs 3x, -1 occurs 2x).
+ *
  * Recognition trigger: count first, rank second
  *
  * Before coding, say aloud:

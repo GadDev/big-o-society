@@ -3,6 +3,13 @@
  * Difficulty: Hard | Mastery: L5 Combine
  * Skill: Floyd + cycle metrics
  *
+ * Goal: given the head of a linked list, return an analysis of whether it
+ * has a cycle, and if so, the entry node, the cycle's length, and the
+ * number of nodes before the entry (tail length).
+ * Example: 1 -> 2 -> 3 -> null -> { hasCycle: false, entry: null, cycleLength: 0, tailLength: 0 };
+ *          10 -> 20 -> 30 -> 40 -> 50 -> (back to node 30) -> { hasCycle: true, entry: node 30, cycleLength: 3, tailLength: 2 };
+ *          1 -> 2 -> 3 -> (back to node 1) -> { hasCycle: true, entry: node 1, cycleLength: 3, tailLength: 0 }.
+ *
  * Recognition trigger: detect cycle, locate entry, measure loop and tail
  *
  * Before coding, say aloud:

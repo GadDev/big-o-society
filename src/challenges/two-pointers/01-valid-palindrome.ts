@@ -2,6 +2,12 @@
  * Exercise 01 — Valid Palindrome
  * Difficulty: Easy | Mastery: Level 1 — Recognize
  *
+ * Goal: given a string `text`, return true when it reads the same forward
+ * and backward after ignoring non-alphanumeric characters and letter casing.
+ * Example: "racecar" -> true (already a palindrome);
+ *          "A man, a plan, a canal: Panama" -> true (ignoring case/punctuation);
+ *          "hello" -> false (not a palindrome).
+ *
  * Return true when `text` reads the same forward and backward after ignoring
  * non-alphanumeric characters and letter casing.
  *

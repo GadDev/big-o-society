@@ -6,6 +6,11 @@
  * Problem:
  *   nums[i] is max jump length. Return whether the last index is reachable.
  *
+ * Goal: track the farthest index reachable so far; return whether it can
+ * ever reach or pass the last index.
+ * Example: [2,3,1,1,4] -> true (reach extends past the last index);
+ *          [3,2,1,0,4] -> false (frontier gets stuck at index 3).
+ *
  * Recognition trigger: only need to know whether current index is reachable and how far reach can extend
  *
  * Before coding, say aloud:

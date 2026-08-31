@@ -8,6 +8,12 @@ import { TreeNode } from './structures';
  * Problem:
  *   Return node values level by level from left to right.
  *
+ * Goal: given the root of a binary tree, return a list of levels, each
+ * level being the array of node values at that depth, top to bottom.
+ * Example: tree 3(9, 20(15, 7)) -> [[3], [9, 20], [15, 7]];
+ *          empty tree (null root) -> [];
+ *          single-node tree 1 -> [[1]].
+ *
  * Recognition trigger: tree output grouped by depth -> queue one level at a time
  *
  * Before coding, say aloud:

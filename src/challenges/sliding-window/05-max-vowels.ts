@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L3 Explain
  * Variant: Fixed window + count state
  *
+ * Goal: given a string `s` and window size `k`, return the maximum number
+ * of vowels (a, e, i, o, u) found in any substring of length `k`.
+ * Example: "abciiidef", k=3 -> 3 (substring "iii");
+ *          "aeiou", k=2 -> 2 (every window of length 2 is all vowels);
+ *          "rhythms", k=4 -> 0 (no window of length 4 contains a vowel).
+ *
  * Recognition trigger: exact length + count property -> rolling count
  *
  * Before coding, say aloud:

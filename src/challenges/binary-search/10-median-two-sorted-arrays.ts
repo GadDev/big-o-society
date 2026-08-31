@@ -3,6 +3,12 @@
  * Difficulty: Hard | Mastery: L5 Combine
  * Skill: Partition binary search
  *
+ * Goal: given two sorted arrays `nums1` and `nums2`, return the median of
+ * the combined sorted array, in logarithmic time.
+ * Example: [1,3] and [2] -> 2;
+ *          [1,2] and [3,4] -> 2.5;
+ *          [] and [1] -> 1.
+ *
  * Recognition trigger: choose partitions so left halves contain exactly half the data
  *
  * Before coding, say aloud:

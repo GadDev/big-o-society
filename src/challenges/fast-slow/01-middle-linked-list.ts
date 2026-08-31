@@ -3,6 +3,12 @@
  * Difficulty: Easy | Mastery: L1 Recognize
  * Skill: 1x / 2x speed
  *
+ * Goal: given the head of a singly linked list, return the middle node. If
+ * there are two middle nodes (even length), return the second one.
+ * Example: 1 -> 2 -> 3 -> 4 -> 5 -> null gives node 3;
+ *          1 -> 2 -> 3 -> 4 -> 5 -> 6 -> null gives node 4;
+ *          1 -> null gives node 1.
+ *
  * Recognition trigger: need midpoint in one pass -> slow 1 step, fast 2
  *
  * Before coding, say aloud:

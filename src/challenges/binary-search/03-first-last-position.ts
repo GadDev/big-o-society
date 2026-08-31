@@ -3,6 +3,13 @@
  * Difficulty: Medium | Mastery: L2 Implement
  * Skill: Left/right boundaries
  *
+ * Goal: given a sorted array `nums` and a `target`, return a tuple
+ * `[first, last]` with the first and last indices where `target` occurs,
+ * or `[-1, -1]` if it does not occur.
+ * Example: [5,7,7,8,8,10], target 8 -> [3,4];
+ *          [5,7,7,8,8,10], target 6 -> [-1,-1];
+ *          [2,2], target 2 -> [0,1].
+ *
  * Recognition trigger: duplicate target -> binary-search both boundaries
  *
  * Before coding, say aloud:

@@ -3,6 +3,11 @@
  * Difficulty: Easy | Mastery: L1→L2
  * Skill: Tree mutation DFS
  *
+ * Goal: given the root of a binary tree, swap every node's left and right
+ * children (mirror the tree) and return the same root.
+ * Example: tree [4,[2,[1],[3]],[7,[6],[9]]] -> [4,[7,[9],[6]],[2,[3],[1]]];
+ *          null -> null (nothing to invert).
+ *
  * Recognition trigger: same operation independently applies to every subtree
  *
  * Before coding, say aloud:

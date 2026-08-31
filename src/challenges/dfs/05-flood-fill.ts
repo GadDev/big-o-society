@@ -3,6 +3,13 @@
  * Difficulty: Medium | Mastery: L3 Explain
  * Skill: Grid DFS
  *
+ * Goal: given a grid `image`, a starting cell (sr, sc), and a new `color`,
+ * recolor every cell reachable from the start through 4-direction neighbors
+ * sharing the start cell's original color, then return the modified grid.
+ * Example: [[1,1,1],[1,1,0],[1,0,1]], start (1,1), color 2
+ *          -> [[2,2,2],[2,2,0],[2,0,1]] (the connected 1s become 2);
+ *          [[0,0,0],[0,0,0]], start (0,0), color 0 -> unchanged (already that color).
+ *
  * Recognition trigger: connected cells with same value -> explore neighbors
  *
  * Before coding, say aloud:

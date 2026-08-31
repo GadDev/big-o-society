@@ -3,6 +3,12 @@
  * Difficulty: Hard | Mastery: L5 Combine
  * Variant: Prefix sums + divide and conquer
  *
+ * Goal: given an array `nums` and bounds `lower`/`upper`, count contiguous
+ * subarrays whose sum `S` satisfies `lower <= S <= upper`.
+ * Example: nums = [-2,5,-1], lower = -2, upper = 2 -> 3;
+ *          nums = [0], lower = 0, upper = 0 -> 1;
+ *          nums = [1,-1], lower = 0, upper = 0 -> 1 (subarray [1,-1] sums to 0).
+ *
  * Recognition trigger: subarray sums become differences between ordered prefixes
  *
  * Before coding, say aloud:

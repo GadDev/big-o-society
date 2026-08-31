@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L2 Implement
  * Variant: Variable window + Set/Map
  *
+ * Goal: given a string `s`, return the length of the longest substring
+ * that contains no repeating characters.
+ * Example: "abcabcbb" -> 3 (substring "abc");
+ *          "bbbbb" -> 1 (substring "b");
+ *          "pwwkew" -> 3 (substring "wke").
+ *
  * Recognition trigger: longest valid contiguous range -> grow, shrink on violation
  *
  * Before coding, say aloud:

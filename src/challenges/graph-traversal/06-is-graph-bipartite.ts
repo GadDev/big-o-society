@@ -6,6 +6,14 @@
  * Problem:
  *   graph[i] lists neighbors of i in an undirected graph. Return whether nodes can be split into two groups with no internal edge.
  *
+ * Goal: given an adjacency list `graph` where `graph[i]` lists the neighbors
+ * of node i, return whether the nodes can be 2-colored so that no edge
+ * connects two same-colored nodes.
+ * Example: graph=[[1,3],[0,2],[1,3],[0,2]] -> true (it's a 4-cycle, evenly
+ *          splittable into {0,2} and {1,3});
+ *          graph=[[1,2,3],[0,2],[0,1,3],[0,2]] -> false (node 1 and node 3
+ *          are both adjacent to node 0 and to each other, an odd cycle).
+ *
  * Recognition trigger: neighbors must be on opposite sides -> propagate two colors and detect contradiction
  *
  * Before coding, say aloud:

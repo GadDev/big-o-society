@@ -3,6 +3,12 @@
  * Difficulty: Easy | Mastery: L2 Implement
  * Skill: Parallel DFS
  *
+ * Goal: given the roots of two binary trees, return true if they are
+ * structurally identical and every corresponding node holds the same value.
+ * Example: [1,[2],[3]] vs [1,[2],[3]] -> true (identical shape and values);
+ *          [1,[2],null] vs [1,null,[2]] -> false (same values, different shape);
+ *          null vs null -> true (two empty trees are equal).
+ *
  * Recognition trigger: compare two recursive structures node by node
  *
  * Before coding, say aloud:

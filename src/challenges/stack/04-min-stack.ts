@@ -3,6 +3,13 @@
  * Difficulty: Medium | Mastery: L2→L3
  * Skill: Stack + synchronized metadata
  *
+ * Goal: implement a stack that supports push, pop, top and getMin, all in
+ * O(1) time, where getMin always returns the current minimum value in the
+ * stack.
+ * Example: push(-2), push(0), push(-3) -> getMin() is -3;
+ *          pop() (removes -3) -> top() is 0 and getMin() is -2;
+ *          push(1), push(1) -> getMin() is 1 (duplicates count as the min too).
+ *
  * Recognition trigger: need normal stack operations plus instant minimum
  *
  * Before coding, say aloud:

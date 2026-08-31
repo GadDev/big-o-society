@@ -6,6 +6,11 @@
  * Problem:
  *   Return the number of connected components in an undirected graph.
  *
+ * Goal: given `n` nodes labeled 0..n-1 and an undirected edge list, return
+ * the number of connected components in the graph.
+ * Example: n=5, edges=[[0,1],[1,2],[3,4]] -> 2 (component {0,1,2} and {3,4});
+ *          n=4, edges=[] -> 4 (every node is its own component).
+ *
  * Recognition trigger: each unseen node starts exactly one new component
  *
  * Before coding, say aloud:

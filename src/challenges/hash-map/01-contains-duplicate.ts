@@ -3,6 +3,12 @@
  * Difficulty: Easy | Mastery: L1 Recognize
  * Variant: Set membership
  *
+ * Goal: given an array `nums`, return true if any value appears at least
+ * twice, and false if every value is distinct.
+ * Example: [1, 2, 3, 1] -> true (1 repeats);
+ *          [1, 2, 3, 4] -> false (all distinct);
+ *          [] -> false (no values to repeat).
+ *
  * Recognition trigger: seen before -> Set
  *
  * Before coding, say aloud:

@@ -6,6 +6,11 @@
  * Problem:
  *   Return the minimum jumps needed to reach the last index. Assume it is reachable.
  *
+ * Goal: expand the current reachable range level by level (like a BFS
+ * layer), counting jumps until the range covers the last index.
+ * Example: [2,3,1,1,4] -> 2 (jump to index 1, then to index 4);
+ *          [2,1,1] -> 1 (one jump from index 0 reaches the last index).
+ *
  * Recognition trigger: minimum jumps -> treat current reachable range like a BFS layer
  *
  * Before coding, say aloud:

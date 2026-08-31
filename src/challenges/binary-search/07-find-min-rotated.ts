@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L4 Adapt
  * Skill: Rotation boundary
  *
+ * Goal: given a distinct-valued array `nums` that was sorted then rotated
+ * at an unknown pivot, return the minimum value in the array.
+ * Example: [3,4,5,1,2] -> 1;
+ *          [4,5,6,7,0,1,2] -> 0;
+ *          [11,13,15,17] -> 11 (no rotation happened).
+ *
  * Recognition trigger: find pivot where sorted order wraps
  *
  * Before coding, say aloud:

@@ -6,6 +6,12 @@
  * Problem:
  *   isConnected[i][j]=1 means cities i and j are directly connected. Return number of connected provinces.
  *
+ * Goal: given an n x n adjacency matrix `isConnected` where `isConnected[i][j] === 1`
+ * means city i and city j are directly connected, return the number of provinces
+ * (groups of cities connected directly or indirectly).
+ * Example: [[1,1,0],[1,1,0],[0,0,1]] -> 2 (cities 0-1 form one province, city 2 its own);
+ *          [[1,0,0],[0,1,0],[0,0,1]] -> 3 (no city is connected to another).
+ *
  * Recognition trigger: count separate groups in connectivity data -> traversal per unseen node
  *
  * Before coding, say aloud:

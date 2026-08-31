@@ -6,6 +6,11 @@
  * Problem:
  *   Return minimum number of intervals to remove so the rest do not overlap.
  *
+ * Goal: sort by end time and greedily keep the interval that finishes
+ * earliest, counting how many later overlapping intervals must be removed.
+ * Example: [[1,2],[2,3],[3,4],[1,3]] -> 1 (remove [1,3] which overlaps [2,3]);
+ *          [[1,2],[1,2],[1,2]] -> 2 (keep one, remove the two duplicates).
+ *
  * Recognition trigger: keep the interval that leaves the most room for future choices
  *
  * Before coding, say aloud:

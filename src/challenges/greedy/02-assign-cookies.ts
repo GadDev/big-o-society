@@ -6,6 +6,11 @@
  * Problem:
  *   Each child has a greed factor and each cookie a size. Return maximum children satisfied.
  *
+ * Goal: match each child's greed factor to the smallest cookie that still
+ * satisfies it, maximizing the count of satisfied children.
+ * Example: greed [1,2,3], cookies [1,1] -> 1 (only the least greedy child can be satisfied);
+ *          greed [1,2], cookies [1,2,3] -> 2 (both children get satisfied).
+ *
  * Recognition trigger: satisfy as many requests as possible -> give the smallest resource that works
  *
  * Before coding, say aloud:

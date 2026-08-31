@@ -6,6 +6,13 @@
  * Problem:
  *   Undirected graph nodes are 0..n-1. Return whether source can reach destination.
  *
+ * Goal: given `n` nodes labeled 0..n-1, an edge list, a `source`, and a
+ * `destination`, return whether there is a path connecting them.
+ * Example: n=3, edges=[[0,1],[1,2],[2,0]], source=0, destination=2 -> true
+ *          (0-1-2 forms a triangle, so 2 is reachable from 0);
+ *          n=6, edges=[[0,1],[0,2],[3,5],[5,4],[4,3]], source=0, destination=5
+ *          -> false (0 and 5 live in separate components).
+ *
  * Recognition trigger: entities connected by edges and a reachability question -> graph traversal
  *
  * Before coding, say aloud:

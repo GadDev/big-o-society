@@ -3,6 +3,12 @@
  * Difficulty: Hard | Mastery: L4 Adapt
  * Skill: Monotonic deque
  *
+ * Goal: given `nums` and window size `k`, return an array of the maximum value
+ * in every contiguous window of size k as it slides from left to right.
+ * Example: nums = [1,3,-1,-3,5,3,6,7], k = 3 -> [3,3,5,5,6,7];
+ *          nums = [9,11], k = 2 -> [11];
+ *          nums = [4,-2], k = 1 -> [4,-2].
+ *
  * Recognition trigger: window maximum + expiring old values -> decreasing deque
  *
  * Before coding, say aloud:

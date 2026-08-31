@@ -2,6 +2,12 @@
  * Exercise 10 — Four Sum (Boss Fight)
  * Difficulty: Hard | Mastery: Level 5 — Combine
  *
+ * Goal: given `nums` and a `target`, return every unique quadruplet
+ * [a, b, c, d] whose values sum to target, with no duplicate quadruplets.
+ * Example: nums = [1,0,-1,0,-2,2], target = 0 -> [[-2,-1,1,2], [-2,0,0,2], [-1,0,0,1]];
+ *          nums = [2,2,2,2,2], target = 8 -> [[2,2,2,2]];
+ *          nums = [1,2,3], target = 6 -> [] (only one triplet of values available, no quadruplet).
+ *
  * Return every unique quadruplet [a, b, c, d] whose values sum to target.
  * The input does not need to be sorted and the result must contain no duplicate
  * quadruplets.

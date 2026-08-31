@@ -3,6 +3,12 @@
  * Difficulty: Hard | Mastery: L5 Combine
  * Variant: Anchor + normalized slope map
  *
+ * Goal: given an array of 2D `points`, return the maximum number of points
+ * that lie on the same straight line.
+ * Example: [[1,1],[2,2],[3,3]] -> 3 (all three lie on y = x);
+ *          [[0,0],[0,1],[0,-1]] -> 3 (all three lie on the vertical line x = 0);
+ *          [[2,3]] -> 1 (a single point trivially lies on a line).
+ *
  * Recognition trigger: same anchor + same normalized slope -> same line
  *
  * Before coding, say aloud:

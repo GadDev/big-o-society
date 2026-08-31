@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L3→L4
  * Skill: Connected components
  *
+ * Goal: given a grid of "1" (land) and "0" (water) characters, return the
+ * number of islands, where an island is a group of "1"s connected 4-directionally.
+ * Example: [["1","1","0"],["1","1","0"],["0","0","1"]] -> 2 (one big blob, one lone cell);
+ *          [["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]
+ *          -> 3 (three separate connected groups); [] -> 0 (empty grid).
+ *
  * Recognition trigger: count regions -> launch DFS from each unseen land cell
  *
  * Before coding, say aloud:

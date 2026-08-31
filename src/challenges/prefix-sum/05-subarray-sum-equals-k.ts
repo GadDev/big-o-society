@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L3 Explain
  * Variant: Prefix sum + Hash Map
  *
+ * Goal: given an array `nums` and target `k`, count how many contiguous
+ * subarrays sum to exactly `k`.
+ * Example: nums = [1,1,1], k = 2 -> 2 (subarrays [1,1] at indices 0-1 and 1-2);
+ *          nums = [1,2,3], k = 3 -> 2 (subarrays [1,2] and [3]);
+ *          nums = [1,-1,0], k = 0 -> 3 (subarrays [1,-1], [0], and [1,-1,0]).
+ *
  * Recognition trigger: prefix difference = target
  *
  * Before coding, say aloud:

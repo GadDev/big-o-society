@@ -6,6 +6,11 @@
  * Problem:
  *   You may merge triplets by coordinate-wise max. Return whether target can be formed.
  *
+ * Goal: discard any triplet with a coordinate exceeding target, then check
+ * whether the surviving triplets together cover every target coordinate exactly.
+ * Example: [[2,5,3],[1,8,4],[1,7,5]], target [2,7,5] -> true ([2,5,3] and [1,7,5] merge to [2,7,5]);
+ *          [[3,4,5],[4,5,6]], target [3,2,5] -> false (both triplets exceed 2 in the second coordinate).
+ *
  * Recognition trigger: ignore any candidate exceeding target; useful candidates can independently contribute coordinates
  *
  * Before coding, say aloud:

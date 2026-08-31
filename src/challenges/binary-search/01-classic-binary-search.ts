@@ -3,6 +3,12 @@
  * Difficulty: Easy | Mastery: L1 Recognize
  * Skill: Exact lookup
  *
+ * Goal: given a sorted array `nums` and a `target`, return the index of
+ * `target` if it exists, otherwise -1.
+ * Example: [-1,0,3,5,9,12], target 9 -> 4;
+ *          [-1,0,3,5,9,12], target 2 -> -1;
+ *          [5], target 5 -> 0.
+ *
  * Recognition trigger: sorted data + exact target -> halve search space
  *
  * Before coding, say aloud:

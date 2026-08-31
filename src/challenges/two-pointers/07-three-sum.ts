@@ -2,6 +2,12 @@
  * Exercise 07 — Three Sum
  * Difficulty: Medium | Mastery: Level 4 — Adapt
  *
+ * Goal: given `nums`, return every unique triplet [a, b, c] such that
+ * a + b + c === 0, with no duplicate triplets in the result.
+ * Example: [-1, 0, 1, 2, -1, -4] -> [[-1, -1, 2], [-1, 0, 1]];
+ *          [0, 1, 1] -> [] (no triplet sums to 0);
+ *          [0, 0, 0] -> [[0, 0, 0]] (one valid triplet, deduplicated).
+ *
  * Return every unique triplet [a, b, c] such that a + b + c === 0.
  * The input does not need to be sorted. The result must not contain duplicate
  * triplets.

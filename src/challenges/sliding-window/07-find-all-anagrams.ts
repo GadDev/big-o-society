@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L4 Adapt
  * Variant: Fixed window + frequency
  *
+ * Goal: given `text` and `pattern`, return every start index in `text`
+ * where a substring of length `pattern.length` is an anagram of `pattern`.
+ * Example: text="cbaebabacd", pattern="abc" -> [0, 6] ("cba" and "bac");
+ *          text="abab", pattern="ab" -> [0, 1, 2] (each window is "ab" or "ba");
+ *          text="abc", pattern="z" -> [] (no anagram of "z" occurs).
+ *
  * Recognition trigger: same as permutation, but collect every match
  *
  * Before coding, say aloud:

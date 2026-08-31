@@ -6,6 +6,11 @@
  * Problem:
  *   Partition s into as many parts as possible so each letter appears in at most one part. Return part lengths.
  *
+ * Goal: extend the current partition's boundary to the last occurrence of
+ * every character seen so far, closing it only once the boundary is reached.
+ * Example: "ababcbacadefegdehijhklij" -> [9,7,8] (three partitions of lengths 9, 7, and 8);
+ *          "eccbbbbdec" -> [10] (every letter's last occurrence forces one single partition).
+ *
  * Recognition trigger: close a segment only when every character seen so far ends inside it
  *
  * Before coding, say aloud:

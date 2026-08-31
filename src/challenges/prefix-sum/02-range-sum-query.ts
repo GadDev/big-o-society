@@ -3,6 +3,12 @@
  * Difficulty: Easy | Mastery: L1→L2
  * Variant: Prefix difference
  *
+ * Goal: build a prefix-sum array (with a leading zero) from `nums`, then
+ * answer inclusive range-sum queries `[left, right]` in O(1) using that array.
+ * Example: nums = [-2,0,3,-5,2,-1] -> prefix = [0,-2,-2,1,-4,-2,-3];
+ *          rangeSum(prefix, 0, 2) -> 1;
+ *          rangeSum(prefix, 2, 5) -> -1.
+ *
  * Recognition trigger: range sum = history at right - history before left
  *
  * Before coding, say aloud:

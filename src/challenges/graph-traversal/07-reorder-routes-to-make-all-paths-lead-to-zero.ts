@@ -6,6 +6,14 @@
  * Problem:
  *   Directed roads form a tree. Return minimum roads to reverse so every city can reach city 0.
  *
+ * Goal: given `n` cities and a list of directed `connections` that form a
+ * tree, return the minimum number of roads to reverse so every city can
+ * reach city 0.
+ * Example: n=6, connections=[[0,1],[1,3],[2,3],[4,0],[4,5]] -> 3
+ *          (edges 0->1, 1->3, 4->5 point away from 0 and must be reversed);
+ *          n=3, connections=[[1,0],[2,0]] -> 0 (both roads already point
+ *          toward city 0).
+ *
  * Recognition trigger: traverse an undirected view while remembering which original edge direction needs reversal
  *
  * Before coding, say aloud:

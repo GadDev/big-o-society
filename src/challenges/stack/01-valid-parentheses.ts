@@ -3,6 +3,13 @@
  * Difficulty: Easy | Mastery: L1 Recognize
  * Skill: Basic LIFO matching
  *
+ * Goal: given a string `s` containing only the brackets `()[]{}`, return
+ * true if every bracket is closed in the correct order and every opener
+ * has a matching closer.
+ * Example: "()[]{}" -> true (each pair closes immediately);
+ *          "(]" -> false (mismatched bracket types);
+ *          "([)]" -> false (closed out of order, even though types balance).
+ *
  * Recognition trigger: nested brackets -> latest opener must close first
  *
  * Before coding, say aloud:

@@ -6,6 +6,14 @@
  * Problem:
  *   Each pair [course, prerequisite]. Return any order that finishes all courses, or [] if impossible.
  *
+ * Goal: given `numCourses` and a list of `[course, prerequisite]` pairs,
+ * return one valid order to take all courses, or `[]` if the prerequisites
+ * contain a cycle.
+ * Example: numCourses=4, prerequisites=[[1,0],[2,0],[3,1],[3,2]] ->
+ *          an order such as [0,1,2,3] (0 before 1 and 2, both before 3);
+ *          numCourses=2, prerequisites=[[1,0],[0,1]] -> [] (1 needs 0 and
+ *          0 needs 1, a cycle).
+ *
  * Recognition trigger: dependencies require an order where prerequisites appear first
  *
  * Before coding, say aloud:

@@ -6,6 +6,11 @@
  * Problem:
  *   Return whether nums can be split into two subsets with equal sums.
  *
+ * Goal: given `nums`, return true if the array can be partitioned into two
+ * subsets whose sums are equal.
+ * Example: [1,5,11,5] -> true ({1,5,5} sums to 11, matching {11});
+ *          [1,2,3,5] -> false (total is 11, no subset sums to 5.5/half).
+ *
  * Recognition trigger: can a subset reach total/2? update achievable sums without reusing an item
  *
  * Before coding, say aloud:

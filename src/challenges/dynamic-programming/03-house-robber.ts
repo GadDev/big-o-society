@@ -6,6 +6,11 @@
  * Problem:
  *   Return maximum money from non-adjacent houses.
  *
+ * Goal: given `nums`, the money stashed in each house in a row, return the
+ * maximum total you can rob without robbing two adjacent houses.
+ * Example: [1,2,3,1] -> 4 (rob house 0 and house 2: 1+3);
+ *          [2,7,9,3,1] -> 12 (rob houses 0, 2, 4: 2+9+1).
+ *
  * Recognition trigger: at each house choose rob current + best two back, or skip current
  *
  * Before coding, say aloud:

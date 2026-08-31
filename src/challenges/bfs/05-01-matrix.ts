@@ -6,6 +6,12 @@
  * Problem:
  *   For each cell, return its distance to the nearest 0 using 4-direction moves.
  *
+ * Goal: given a binary matrix, return a same-shape matrix where each cell
+ * holds its Manhattan-style grid distance (4-direction steps) to the
+ * nearest 0 cell.
+ * Example: [[0,0,0],[0,1,0],[1,1,1]] -> [[0,0,0],[0,1,0],[1,2,1]];
+ *          [[0,0],[0,0]] -> [[0,0],[0,0]] (every cell is already a 0).
+ *
  * Recognition trigger: distance to nearest source for every cell -> start from every source at once
  *
  * Before coding, say aloud:

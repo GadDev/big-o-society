@@ -3,6 +3,11 @@
  * Difficulty: Medium | Mastery: L3→L4
  * Skill: Two queues of indices
  *
+ * Goal: given `senate`, a string of 'R' (Radiant) and 'D' (Dire) senators voting
+ * in order and repeating in rounds, where each senator bans the next active
+ * opposing senator, return which party eventually wins ('Radiant' or 'Dire').
+ * Example: "RD" -> "Radiant"; "RDD" -> "Dire"; "RRDDD" -> "Radiant".
+ *
  * Recognition trigger: two competing groups act in cyclic order
  *
  * Before coding, say aloud:

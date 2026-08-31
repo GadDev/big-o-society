@@ -3,6 +3,13 @@
  * Difficulty: Easy | Mastery: L2→L3
  * Skill: Cycle detection on generated states
  *
+ * Goal: given a number `n`, repeatedly replace it with the sum of the
+ * squares of its digits; return true if this process reaches 1, or false if
+ * it loops forever without reaching 1.
+ * Example: 19 -> true (1^2+9^2=82, 8^2+2^2=68, ... eventually reaches 1);
+ *          2 -> false (falls into a cycle that never reaches 1);
+ *          1 -> true (already 1).
+ *
  * Recognition trigger: repeated transformation eventually reaches 1 or loops
  *
  * Before coding, say aloud:

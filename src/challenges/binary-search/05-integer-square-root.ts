@@ -3,6 +3,12 @@
  * Difficulty: Easy | Mastery: L3 Explain
  * Skill: Binary search numeric answer
  *
+ * Goal: given a non-negative integer `x`, return floor(sqrt(x)) without
+ * relying on Math.sqrt as the algorithm itself.
+ * Example: 4 -> 2 (exact square root);
+ *          8 -> 2 (floor of ~2.83);
+ *          0 -> 0.
+ *
  * Recognition trigger: largest integer satisfying x² <= n
  *
  * Before coding, say aloud:

@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L3 Explain
  * Skill: Middle + reverse + compare
  *
+ * Goal: given the head of a linked list, return whether the sequence of
+ * values reads the same forward and backward, using O(1) extra space.
+ * Example: 1 -> 2 -> 2 -> 1 -> null -> true;
+ *          1 -> 2 -> null -> false;
+ *          1 -> 2 -> 3 -> 2 -> 1 -> null -> true.
+ *
  * Recognition trigger: split at middle, reverse second half, compare halves
  *
  * Before coding, say aloud:

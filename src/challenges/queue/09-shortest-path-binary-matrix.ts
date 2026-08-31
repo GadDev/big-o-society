@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L4→L5
  * Skill: BFS queue
  *
+ * Goal: given a binary `grid`, return the length (number of cells) of the
+ * shortest path of 0-cells from top-left to bottom-right moving in any of
+ * the 8 directions, or -1 if no such path exists.
+ * Example: [[0,1],[1,0]] -> 2; [[0,0,0],[1,1,0],[1,1,0]] -> 4;
+ *          [[1]] -> -1 (start cell itself is blocked).
+ *
  * Recognition trigger: unweighted shortest path -> explore level by level
  *
  * Before coding, say aloud:

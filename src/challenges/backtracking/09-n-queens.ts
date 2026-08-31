@@ -6,6 +6,12 @@
  * Problem:
  *   Return every valid n-queens board using "Q" and ".".
  *
+ * Goal: given an integer `n`, return all distinct solutions to placing `n`
+ * queens on an n×n board so no two queens attack each other, each solution
+ * as an array of row-strings using "Q" and ".".
+ * Example: n=4 -> 2 boards, e.g. [".Q..","...Q","Q...","..Q."] and its mirror;
+ *          n=1 -> [["Q"]] (a single queen trivially doesn't attack itself).
+ *
  * Recognition trigger: place one queen per row while columns and diagonals stay conflict-free
  *
  * Before coding, say aloud:

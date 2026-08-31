@@ -6,6 +6,11 @@
  * Problem:
  *   Return all well-formed strings containing n pairs of parentheses.
  *
+ * Goal: given an integer `n`, return all combinations of well-formed
+ * (balanced) parentheses strings using exactly `n` pairs.
+ * Example: n=3 -> ["((()))","(()())","(())()","()(())","()()()"];
+ *          n=1 -> ["()"] (only one well-formed string with one pair).
+ *
  * Recognition trigger: build all sequences but prune as soon as closes exceed opens
  *
  * Before coding, say aloud:

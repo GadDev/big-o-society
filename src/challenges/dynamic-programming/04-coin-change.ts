@@ -6,6 +6,12 @@
  * Problem:
  *   Return minimum coins to make amount, or -1 if impossible. Coins may be reused.
  *
+ * Goal: given `coins` (denominations, reusable) and a target `amount`,
+ * return the fewest coins needed to make that amount, or -1 if it can't be made.
+ * Example: coins=[1,2,5], amount=11 -> 3 (5+5+1);
+ *          coins=[2], amount=3 -> -1 (odd amount, only even coin);
+ *          coins=[2], amount=0 -> 0 (no coins needed).
+ *
  * Recognition trigger: best amount x = one coin + best answer for x-coin
  *
  * Before coding, say aloud:

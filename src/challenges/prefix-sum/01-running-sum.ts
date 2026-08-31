@@ -3,6 +3,12 @@
  * Difficulty: Easy | Mastery: L1 Recognize
  * Variant: 1D prefix construction
  *
+ * Goal: given an array `nums`, return an array `result` where `result[i]` is
+ * the sum of `nums[0..i]` inclusive.
+ * Example: [1,2,3,4] -> [1,3,6,10];
+ *          [1,1,1,1,1] -> [1,2,3,4,5];
+ *          [] -> [].
+ *
  * Recognition trigger: sum up to i -> carry history forward
  *
  * Before coding, say aloud:

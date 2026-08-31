@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L3→L4
  * Skill: Identify sorted half
  *
+ * Goal: given a distinct-valued array `nums` that was sorted then rotated
+ * at an unknown pivot, and a `target`, return the index of `target` or -1.
+ * Example: [4,5,6,7,0,1,2], target 0 -> 4;
+ *          [4,5,6,7,0,1,2], target 3 -> -1;
+ *          [3,1], target 1 -> 1.
+ *
  * Recognition trigger: one half remains sorted even after rotation
  *
  * Before coding, say aloud:

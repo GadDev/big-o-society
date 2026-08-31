@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L4 Adapt
  * Skill: DFS path construction
  *
+ * Goal: given a directed acyclic graph as an adjacency list `graph` (node i
+ * points to the nodes in graph[i]), return every path from node 0 to node
+ * n-1 (n = graph.length), each as an array of node indices in order.
+ * Example: [[1,2],[3],[3],[]] -> [[0,1,3],[0,2,3]] (two ways to reach node 3);
+ *          [[4,3,1],[3,2,4],[3],[4],[]] -> [[0,4],[0,3,4],[0,1,4],[0,1,3,4],[0,1,2,3,4]].
+ *
  * Recognition trigger: enumerate every branch -> choose, recurse, undo
  *
  * Before coding, say aloud:

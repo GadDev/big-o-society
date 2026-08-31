@@ -3,6 +3,12 @@
  * Difficulty: Medium | Mastery: L4→L5
  * Variant: Prefix sum + frequency map
  *
+ * Goal: given an array `nums` and an integer `k`, return the number of
+ * contiguous subarrays whose elements sum to exactly `k`.
+ * Example: [1, 1, 1], k=2 -> 2 (subarrays [1,1] at indices 0-1 and 1-2);
+ *          [1, 2, 3], k=3 -> 2 (subarrays [1,2] and [3]);
+ *          [], k=0 -> 0 (no elements, no subarrays).
+ *
  * Recognition trigger: prefix difference = target
  *
  * Before coding, say aloud:

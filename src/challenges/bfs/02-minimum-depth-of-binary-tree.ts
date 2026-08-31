@@ -8,6 +8,12 @@ import { TreeNode } from './structures';
  * Problem:
  *   Return the number of nodes on the shortest root-to-leaf path.
  *
+ * Goal: given the root of a binary tree, return the number of nodes along
+ * the shortest path from root to any leaf (a node with no children).
+ * Example: tree 3(9, 20(15, 7)) -> 2 (root -> 9 is the shortest leaf path);
+ *          tree 1(null, 2(null, 3)) -> 3 (must descend right twice to leaf 3);
+ *          null root -> 0.
+ *
  * Recognition trigger: need nearest leaf -> first leaf reached by BFS is optimal
  *
  * Before coding, say aloud:

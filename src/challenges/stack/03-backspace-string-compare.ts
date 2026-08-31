@@ -3,6 +3,13 @@
  * Difficulty: Easy | Mastery: L2 Implement
  * Skill: Stack simulation
  *
+ * Goal: given two strings `s` and `t` where `#` means "delete the previous
+ * character" (a backspace), return true if applying all backspaces makes
+ * the two final strings equal.
+ * Example: "ab#c" and "ad#c" -> true (both reduce to "ac");
+ *          "ab##" and "c#d#" -> true (both reduce to "");
+ *          "a#c" and "b" -> false ("a#c" reduces to "c", not "b").
+ *
  * Recognition trigger: backspace/undo behavior -> stack
  *
  * Before coding, say aloud:

@@ -6,6 +6,11 @@
  * Problem:
  *   Map digits 2-9 to phone keypad letters and return every possible string. Empty input returns [].
  *
+ * Goal: given a string `digits` of digits 2-9, return every possible letter
+ * combination the number could represent on a phone keypad, in any order.
+ * Example: "23" -> 9 strings, including "ad" and "cf" (2->"abc", 3->"def");
+ *          "" -> [] (empty input produces no combinations).
+ *
  * Recognition trigger: each input symbol offers a small set of choices -> product-shaped search tree
  *
  * Before coding, say aloud:
