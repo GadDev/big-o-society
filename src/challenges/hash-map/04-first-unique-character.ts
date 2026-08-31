@@ -3,6 +3,12 @@
  * Difficulty: Easy | Mastery: L2→L3
  * Variant: Count then scan
  *
+ * Goal: given a string `s`, return the index of the first character that
+ * appears exactly once. If every character repeats, return -1.
+ * Example: "leetcode" -> 0 ('l' is unique and appears first);
+ *          "loveleetcode" -> 2 ('v' is the first character with count 1);
+ *          "aabb" -> -1 (no character appears exactly once).
+ *
  * Recognition trigger: need first unique -> count, then preserve order
  *
  * Before coding, say aloud:
